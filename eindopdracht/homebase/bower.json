@@ -1,0 +1,28 @@
+{
+  "name": "marki",
+  "version": "0.0.0",
+  "authors": [
+    "James van Arkel - Paul Bot"
+  ],
+  "description": "Bower file for Marki wordpress theme",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Marki",
+    "Wordpress"
+  ],
+  "license": "MIT",
+  "homepage": "www.duif.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "modernizr": "~3.1.0",
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0",
+    "lightbox2": "^2.9.0"
+  }
+}

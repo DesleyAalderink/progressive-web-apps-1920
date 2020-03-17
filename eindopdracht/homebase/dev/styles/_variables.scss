@@ -1,0 +1,476 @@
+/* == FONTS == */
+
+    /* Default Text */
+    $default-fnt       : "Montserrat", Helvetica, Arial, sans-serif;
+
+/* == COLORS == */
+
+    $clr-red           : #D0021B;
+    $clr-blue          : #192124;
+
+
+/* == BREAKPOINTS FROM BOOTSTRAP == */
+
+    /* Extra small devices (phones, less than 768px) */
+    $screen-xs-min          : 768px;
+
+    /* Small devices (tablets, 768px and up) */
+    $screen-xs-min         : 768px;
+
+    /* Medium devices (desktops, 992px and up) */
+    $screen-md-min          : 992px;
+
+    /* Large devices (large desktops, 1200px and up) */
+    $screen-lg-min          : 1200px;
+
+
+ /* == standard margins and paddings == */
+
+		$small				:10px;
+
+		$normal				:20px;
+
+		$large				:50px;
+
+		$extra-large		:100px;
+
+
+		.margin-s{
+			margin:$small;
+		}
+		.margin-top-s{
+			margin-top:$small;
+		}
+		.margin-bottom-s{
+			margin-bottom:$small;
+		}
+		.margin-left-s{
+			margin-left:$small;
+		}
+		.margin-right-s{
+			margin-right:$small;
+		}
+
+		.margin{
+			margin:$normal;
+		}
+		.margin-top{
+			margin-top:$normal;
+		}
+		.margin-bottom{
+			margin-bottom:$normal;
+		}
+		.margin-left{
+			margin-left:$normal;
+		}
+		.margin-right{
+			margin-right:$normal;
+		}
+
+		.margin-l{
+			margin:$large;
+		}
+		.margin-top-l{
+			margin-top:$large;
+		}
+		.margin-bottom-l{
+			margin-bottom:$large;
+		}
+		.margin-left-l{
+			margin-left:$large;
+		}
+		.margin-right-l{
+			margin-right:$large;
+		}
+
+		.margin-xl{
+			margin:$extra-large;
+		}
+		.margin-top-xl{
+			margin-top:$extra-large;
+		}
+		.margin-bottom-xl{
+			margin-bottom:$extra-large;
+		}
+		.margin-left-xl{
+			margin-left:$extra-large;
+		}
+		.margin-right-xl{
+			margin-right:$extra-large;
+		}
+
+		.padding-s{
+			padding:$small;
+		}
+		.padding-top-s{
+			padding-top:$small;
+		}
+		.padding-bottom-s{
+			padding-bottom:$small;
+		}
+		.padding-left-s{
+			padding-left:$small;
+		}
+		.padding-right-s{
+			padding-right:$small;
+		}
+
+		.padding{
+			padding:$normal;
+		}
+		.padding-top{
+			padding-top:$normal;
+		}
+		.padding-bottom{
+			padding-bottom:$normal;
+		}
+		.padding-left{
+			padding-left:$normal;
+		}
+		.padding-right{
+			padding-right:$normal;
+		}
+
+		.padding-l{
+			padding:$large;
+		}
+		.padding-top-l{
+			padding-top:$large;
+		}
+		.padding-bottom-l{
+			padding-bottom:$large;
+		}
+		.padding-left-l{
+			padding-left:$large;
+		}
+		.padding-right-l{
+			padding-right:$large;
+		}
+
+		.padding-xl{
+			padding:$extra-large;
+		}
+		.padding-top-xl{
+			padding-top:$extra-large;
+		}
+		.padding-bottom-xl{
+			padding-bottom:$extra-large;
+		}
+		.padding-left-xl{
+		  padding-left:$extra-large;
+		}
+		.padding-right-xl{
+			padding-right:$extra-large;
+		}
+
+    @media screen and (max-width: $screen-md-min) {
+      .margin-s{
+        margin: 5px;
+      }
+      .margin-top-s{
+        margin-top: 5px;
+      }
+      .margin-bottom-s{
+        margin-bottom: 5px;
+      }
+      .margin-left-s{
+        margin-left: 5px;
+      }
+      .margin-right-s{
+        margin-right: 5px;
+      }
+
+      .margin{
+        margin: 10px;
+      }
+      .margin-top{
+        margin-top: 10px;
+      }
+      .margin-bottom{
+        margin-bottom: 10px;
+      }
+      .margin-left{
+        margin-left: 10px;
+      }
+      .margin-right{
+        margin-right: 10px;
+      }
+
+      .margin-l{
+        margin: 25px;
+      }
+      .margin-top-l{
+        margin-top: 25px;
+      }
+      .margin-bottom-l{
+        margin-bottom: 25px;
+      }
+      .margin-left-l{
+        margin-left: 25px;
+      }
+      .margin-right-l{
+        margin-right: 25px;
+      }
+
+      .margin-xl{
+        margin: 50px;
+      }
+      .margin-top-xl{
+        margin-top: 50px;
+      }
+      .margin-bottom-xl{
+        margin-bottom: 50px;
+      }
+      .margin-left-xl{
+        margin-left: 50px;
+      }
+      .margin-right-xl{
+        margin-right: 50px;
+      }
+
+      .padding-s{
+        padding: 10px;
+      }
+      .padding-top-s{
+        padding-top: 10px;
+      }
+      .padding-bottom-s{
+        padding-bottom: 10px;
+      }
+      .padding-left-s{
+        padding-left: 10px;
+      }
+      .padding-right-s{
+        padding-right: 10px;
+      }
+
+      .padding{
+        padding: 5px;
+      }
+      .padding-top{
+        padding-top: 5px;
+      }
+      .padding-bottom{
+        padding-bottom: 5px;
+      }
+      .padding-left{
+        padding-left: 5px;
+      }
+      .padding-right{
+        padding-right: 5px;
+      }
+
+      .padding-l{
+        padding: 25px;
+      }
+      .padding-top-l{
+        padding-top: 25px;
+      }
+      .padding-bottom-l{
+        padding-bottom: 25px;
+      }
+      .padding-left-l{
+        padding-left: 25px;
+      }
+      .padding-right-l{
+        padding-right: 25px;
+      }
+
+      .padding-xl{
+        padding: 50px;
+      }
+      .padding-top-xl{
+        padding-top: 50px;
+      }
+      .padding-bottom-xl{
+        padding-bottom: 50px;
+      }
+      .padding-left-xl{
+        padding-left: 50px;
+      }
+      .padding-right-xl{
+        padding-right: 50px;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+      .margin-s{
+        margin: 2.5px;
+      }
+      .margin-top-s{
+        margin-top: 2.5px;
+      }
+      .margin-bottom-s{
+        margin-bottom: 2.5px;
+      }
+      .margin-left-s{
+        margin-left: 2.5px;
+      }
+      .margin-right-s{
+        margin-right: 2.5px;
+      }
+
+      .margin{
+        margin: 5px;
+      }
+      .margin-top{
+        margin-top: 5px;
+      }
+      .margin-bottom{
+        margin-bottom: 5px;
+      }
+      .margin-left{
+        margin-left: 5px;
+      }
+      .margin-right{
+        margin-right: 5px;
+      }
+
+      .margin-l{
+        margin: 15px;
+      }
+      .margin-top-l{
+        margin-top: 15px;
+      }
+      .margin-bottom-l{
+        margin-bottom: 15px;
+      }
+      .margin-left-l{
+        margin-left: 15px;
+      }
+      .margin-right-l{
+        margin-right: 15px;
+      }
+
+      .margin-xl{
+        margin: 25px;
+      }
+      .margin-top-xl{
+        margin-top: 25px;
+      }
+      .margin-bottom-xl{
+        margin-bottom: 25px;
+      }
+      .margin-left-xl{
+        margin-left: 25px;
+      }
+      .margin-right-xl{
+        margin-right: 25px;
+      }
+
+      .padding-s{
+        padding: 2.5px;
+      }
+      .padding-top-s{
+        padding-top: 2.5px;
+      }
+      .padding-bottom-s{
+        padding-bottom: 2.5px;
+      }
+      .padding-left-s{
+        padding-left: 2.5px;
+      }
+      .padding-right-s{
+        padding-right: 2.5px;
+      }
+
+      .padding{
+        padding: 5px;
+      }
+      .padding-top{
+        padding-top: 5px;
+      }
+      .padding-bottom{
+        padding-bottom: 5px;
+      }
+      .padding-left{
+        padding-left: 5px;
+      }
+      .padding-right{
+        padding-right: 5px;
+      }
+
+      .padding-l{
+        padding: 15px;
+      }
+      .padding-top-l{
+        padding-top: 15px;
+      }
+      .padding-bottom-l{
+        padding-bottom: 15px;
+      }
+      .padding-left-l{
+        padding-left: 15px;
+      }
+      .padding-right-l{
+        padding-right: 15px;
+      }
+
+      .padding-xl{
+        padding: 25px;
+      }
+      .padding-top-xl{
+        padding-top: 25px;
+      }
+      .padding-bottom-xl{
+        padding-bottom: 25px;
+      }
+      .padding-left-xl{
+        padding-left: 25px;
+      }
+      .padding-right-xl{
+        padding-right: 25px;
+      }
+    }
+
+    // CUSTOM
+
+    .no-padding { padding: 0; }
+    .no-margin { margin: 0; }
+    .relative {position: relative;}
+
+    .width100 { width: 100%; }
+    .width75 { width: 75%; }
+    .width50 { width: 50%; }
+    .width25 { width: 50%; }
+
+    .floatLeft { float: left; }
+    .floatRight { float: right; }
+    .floatClear { clear: both; }
+
+    .alignLeft { text-align: left; }
+    .alignCenter { text-align: center; }
+    .alignRight { text-align: right; }
+
+    .youtube-video, .vimeo-video {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      margin-bottom: 30px;
+
+      .video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    .dual-columns {
+      column-count: 2;
+      column-fill: balance;
+      column-gap: 30px;
+
+      .column-p {
+        text-indent: 1em; /* To show paragraph starts. */
+        page-break-inside: avoid; /* For Firefox. */
+        -webkit-column-break-inside: avoid; /* For Chrome & friends. */
+        break-inside: avoid; /* For standard browsers like IE. :-) */
+      }
+    }

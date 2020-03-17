@@ -1,0 +1,12 @@
+{
+  "urls": [
+    {
+      "link": "/",
+      "name": "homepage"
+    },
+    {
+      "link": "/docenten/mees",
+      "name": "docenten"
+    }
+  ]
+}
