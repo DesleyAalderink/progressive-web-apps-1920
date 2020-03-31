@@ -1,7 +1,7 @@
 
 ## Letten op
 Mijn gulpfile.babel.js bevat mijn taskrunners. Het is wel wat meer ingkewikeld dan wat er verwacht word, maar het is overzichtelijk in elkaar gezet. Ik denk dat alles wel voor zichzelf spreekt en anders geef ik daar graag antwoord op.
-De veranderingen die ik heb toegebracht staan nog niet live. Mijn baas wilt er zelf nog een keer voor de zekerheid doorheen voor we de veranderingen doorvoeren, maar ik denk dat er genoeg informatie uit de code/readme kan worden opgehaald van wat ik heb veranderd.
+De veranderingen die ik heb toegebracht staan live op https://staging.studiohomebase.amsterdam.
 Het hele project is gemaakt in Wordpress. De map "homebase" is het thema map en daarin zit alles wat ik heb gedaan. De ServiceWorkers horen in de root map (httdocs) van Wordpress.
 
 ## Ik ben het meest trots op
