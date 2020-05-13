@@ -1,6 +1,8 @@
 ## Introductie
 Dit project is gemaakt naar aanleiding van het vak Progressive Web Apps.
 
+![studio homebase][homebase]
+
 ## De opdracht
 Ik heb besloten om de website "https://studiohomebase.amsterdam/" te verbeteren. Dit is een website die ooit gemaakt is door The Pack (bedrijf waar ik nu werk). Deze site is erg outdated en kan zeker een opfrisser gebruiken. Ik heb alle door The Pack gemaakte websites naast elkaar neergezet en deze resulteerde als de slechtste van de Google Audit score. Ik heb de checklist lijstje van Performance Matters erbij gepakt samen met de Google Audit tool en gekeken wat ik kan fixen. De audit zelf liet al genoeg opties zien wat veranderd kan worden.
 
@@ -57,3 +59,5 @@ RequestAnimationFrame is nu toegepast op de animaties voor een veel soepelere an
 
 ### Service Worker
 Voor de website heb ik een service worker geïmplementeerd. Dit vond ik het meest interessante van de hele optimalisatie. Toen ik hier de vorige keer aan begon snapte ik er niks van en was er zelfs een beetje bang voor. Nu ik meer kennis heb kon ik het redelijk snel toevoegen. De website wordt nu succesvol gecached als de gebruiker op de website komt. Als het internet zou uitvallen dan kan de gebruiker nog steeds op de website navigeren.
+
+[homebase]: homebase.png
