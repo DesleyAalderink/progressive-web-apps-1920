@@ -1,3 +1,8 @@
+## Introductie
+Dit project is gemaakt naar aanleiding van het vak Progressive Web Apps.
+
+## De opdracht
+Ik heb besloten om de website "https://studiohomebase.amsterdam/" te verbeteren. Dit is een website die ooit gemaakt is door The Pack (bedrijf waar ik nu werk). Deze site is erg outdated en kan zeker een opfrisser gebruiken. Ik heb alle door The Pack gemaakte websites naast elkaar neergezet en deze resulteerde als de slechtste van de Google Audit score. Ik heb de checklist lijstje van Performance Matters erbij gepakt samen met de Google Audit tool en gekeken wat ik kan fixen. De audit zelf liet al genoeg opties zien wat veranderd kan worden.
 
 ## Letten op
 Mijn gulpfile.babel.js bevat mijn taskrunners. Het is wel wat meer ingkewikeld dan wat er verwacht word, maar het is overzichtelijk in elkaar gezet. Ik denk dat alles wel voor zichzelf spreekt en anders geef ik daar graag antwoord op.
@@ -8,10 +13,19 @@ Het hele project is gemaakt in Wordpress. De map "homebase" is het thema map en 
 De voortgang die ik heb bereikt. Ik ben heel erg doorgegroeid op het gebied van coderen en daardoor ging deze opdracht mij ook goed af. Ik had er ook veel plezier mee en ben blij dat ik het bedrijf waar ik werk kan verbeteren met alles wat ik geleerd heb in de minor.
 Ook ben ik erg trots op de 2000 regels JQuery die ik heb omgeschreven naar vanilla JS. Dit duurde heel lang en ik heb heel veel code kunnen verwijderen erdoor.
 
-## De opdracht
-Ik heb besloten om de website "https://studiohomebase.amsterdam/" te verbeteren. Dit is een website die ooit gemaakt is door The Pack (bedrijf waar ik nu werk). Deze site is erg outdated en kan zeker een opfrisser gebruiken. Ik heb alle door The Pack gemaakte websites naast elkaar neergezet en deze resulteerde als de slechtste van de Google Audit score. Ik heb de checklist lijstje van Performance Matters erbij gepakt samen met de Google Audit tool en gekeken wat ik kan fixen. De audit zelf liet al genoeg opties zien wat veranderd kan worden.
-
 Het was tijdens het verbeteren van de website belangrijk om te onthouden dat al de gemaakte veranderingen live gingen, dus ik moet verbeteren wat echt een toevoeging is voor de website.
+
+## Installeren
+**1. Download wordpress**
+
+**2. Download en installeer de custom thema**
+
+**3. Pak de laatste database uit de dump folder en zet deze in je phpmyadmin**
+
+**4. Pas de wp-config aan naar de desbetreffende settings**
+
+**5. Vraag aan mij de inloggegevens voor de back-end van Wordpress**
+
 
 ## Mijn progressie
 
