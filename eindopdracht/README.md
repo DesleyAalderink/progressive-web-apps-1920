@@ -63,7 +63,34 @@ Het was tijdens het verbeteren van de website belangrijk om te onthouden dat al 
 Ik ben begonnen met het vervangen van de code setup. Toen ik begon met stagelopen bij The Pack heb ik een nieuwe "Vanilla Template" gebouwd waarop gedeveloped kon worden. Deze template behoord aan veel eisen voor een hogere/snellere performance. Dit vanilla template heb ik geïmplementeerd in de Studiohomebase website. Alles wordt nu succesvol geminifyd en ook zit er [Modernizr](https://modernizr.com/) in. Dit is als het ware een feature detection die kijkt naar elementen die niet support worden in de browser en maakt hier een fallback voor.
 
 ### Lazy loading
-Alle afbeeldingen worden nu lazy loaded ingeladen. Hiervoor heb ik de [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) gebruikt. Het moment dat de afbeeldingen in de viewport komen zal deze worden ingeladen.
+Alle afbeeldingen worden nu lazy loaded ingeladen. Hiervoor heb ik de [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) gebruikt.
+
+```js
+  const config = {
+    threshold: 0,
+    rootMargin: "100px"
+  };
+
+  function preloadImage(el) {
+    el.src = el.dataset.src
+  }
+
+  var observer = new IntersectionObserver(function(entries, self) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        preloadImage(entry.target);
+        self.unobserve(entry.target);
+      }
+    });
+  }, config);
+
+  const imgs = document.querySelectorAll('img[data-src]');
+  imgs.forEach(img => {
+    observer.observe(img);
+  });
+```
+
+Er wordt een rootmargin aangegeven die tegen de observer zegt vanaf hoeveel pixels, buiten de viewport, de image moet beginnen met inladen. Op het moment dat dit wordt aangegeven zal de nieuwe src van de image de data-src worden. In de data-src heb ik van te voren aangegeven wat de link image moet zijn.
 
 ### Images
 De vanilla template houdt al rekening met de compressie van afbeeldingen, maar nog niet met het serven van de afbeeldingen in de juiste formaat. Aangezien deze website draait op Wordpress heb ik een handige plug in tool gevonden genaamd [Imagify](https://wordpress.org/plugins/imagify/) wat rekening houdt met wat de gebruiker upload in de media library. Deze afbeeldingen worden omgezet naar een WebP formaat en deze worden ook nog compressed. De images worden nu ook op de juiste manier opgeroepen in de `<picture>` tagg.
