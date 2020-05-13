@@ -98,10 +98,10 @@ De vanilla template houdt al rekening met de compressie van afbeeldingen, maar n
 Na wat testen en onderzoeken kwam ik er achter dat het webp formaat niet overal support wordt. Door deze reden heb ik dus ook besloten om de afbeeldingen maar niet in webp formaat om te zetten.
 
 ### Fonts
-Fallback fonts zijn toegevoegd op de fonts die gebruikt worden samen met de font subsetting voor een snellere performance. Ook is `font-display: swap` toegevoegd, zodat eerst de fallback fonts er staan, voor de standaard font is ingeladen.
+Fallback fonts zijn toegevoegd op de fonts die gebruikt worden samen met de font subsetting voor een snellere performance. Ook is `font-display: swap` toegevoegd, zodat eerst de fallback fonts er staan, voor de standaard font is ingeladen. Dit laat de content meteen aan de gebruiker zien zonder dat ze hoeven te wachten en alleen maar wit zien.
 
 ### Caching
-Voor caching heb ik Redis gebruikt. Dit bewaard de cach op een apparte plek, waardoor de website sneller functioneerd.
+Voor caching heb ik Redis gebruikt. Dit bewaard de cach op een apparte plek, waardoor de website sneller functioneerd. Dit kon ik installeren door een plugin te installeren op de website en in de wp-config aan te geven wat de salt en het wachtwoord is.
 
 ### CSS
 CSS wordt nu geminifyed en veel onnodige CSS is verwijderd. Niet alles kon verwijderd worden, aangezien veel plug ins geactiveerd zijn die CSS inladen die niet gebruikt worden, hier kan ik helaas niet veel aan doen.
