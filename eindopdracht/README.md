@@ -113,6 +113,25 @@ De hele JavaScript was opgebouwd uit JQuery, dit heb ik stuk voor stuk omgebouwd
 RequestAnimationFrame is nu toegepast op de animaties voor een veel soepelere animatie.
 
 ### Service Worker
-Voor de website heb ik een service worker geïmplementeerd. Dit vond ik het meest interessante van de hele optimalisatie. Toen ik hier de vorige keer aan begon snapte ik er niks van en was er zelfs een beetje bang voor. Nu ik meer kennis heb kon ik het redelijk snel toevoegen. De website wordt nu succesvol gecached als de gebruiker op de website komt. Als het internet zou uitvallen dan kan de gebruiker nog steeds op de website navigeren.
+Voor de website heb ik een service worker geïmplementeerd. Dit vond ik het meest interessante van de hele optimalisatie. Toen ik hier de vorige keer aan begon snapte ik er niks van en was er zelfs een beetje bang voor. Nu ik meer kennis heb kon ik het redelijk snel toevoegen. Een service worker is niks meer dan een webworker die netwerk requests onderschept. Wordt normaal gesproken gebruikt voor het cachen van bestanden of je website/applicatie online te laten werken.
+
+
+```js
+var assetsToCache = [
+  '/wp-content'
+];
+
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open(cacheName).then(function(cache) {
+        return cache.addAll(assetsToCache);
+    }).then(function() {
+      return self.skipWaiting();
+    })
+  );
+});
+```
+
+In mijn geval sla ik de hele wp-content map op. Deze map bevat alle bestanden die website gebruikt en hierdoor kan de website succesvol functioneren. Als de gebruiker op de website komt, dan zal de service worker te werk gaan. Als het internet zou uitvallen dan kan de gebruiker nog steeds op de website navigeren.
 
 [homebase]: homebase.png
