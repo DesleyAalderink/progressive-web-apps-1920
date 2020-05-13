@@ -154,7 +154,7 @@ De hele JavaScript was opgebouwd uit JQuery, dit heb ik stuk voor stuk omgebouwd
 RequestAnimationFrame is nu toegepast op de animaties voor een veel soepelere animatie.
 
 ### Gzipping
-
+Dit wordt afgehandeld door de server van The Pack en hier heb ik zelf niet aangezeten. 
 
 ### Service Worker
 Voor de website heb ik een service worker geïmplementeerd. Dit vond ik het meest interessante van de hele optimalisatie. Toen ik hier de vorige keer aan begon snapte ik er niks van en was er zelfs een beetje bang voor. Nu ik meer kennis heb kon ik het redelijk snel toevoegen. Een service worker is niks meer dan een webworker die netwerk requests onderschept. Wordt normaal gesproken gebruikt voor het cachen van bestanden of je website/applicatie online te laten werken.
