@@ -141,4 +141,22 @@ De gebruikers komen in een lobby waar ze een gebruikersnaam kunnen opgeven en de
 
 Client side wordt er per gebruiker gekeken of de Tweet correct overtypen. Het moment dat een gebruiker de Tweet volledig heeft ingevuld, zal er via de server tegen iedereen die mee doet aan de game gezegd worden wie er een punt heeft gehaald. Dit gaat door tot iemand 3 punten heeft. De server verteld tegen iedereen wie er heeft gewonnen en de game kan opnieuw beginnen.
 
+```js
+const generateNewQuote = () => {
+    T.get('search/tweets', { q: 'corona exclude:retweets', count: 4,  tweet_mode: 'extended', lang: 'en'})
+    .then(data => {
+        game.currentQuote = data.data.statuses[0].full_text
+
+      if (game.players.length === game.playersNeededToStart) {
+        setTimeout(() => {
+          io.emit("startGame", game.currentQuote)
+        }, 300)
+      } else {
+        console.log("niet genoeg mensen");
+      }
+    })
+    return
+  }
+```
+
 [homebase]: homebase.png
