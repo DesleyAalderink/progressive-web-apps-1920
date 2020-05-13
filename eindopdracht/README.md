@@ -28,6 +28,34 @@ Het was tijdens het verbeteren van de website belangrijk om te onthouden dat al 
 
 **5. Vraag aan mij de inloggegevens voor de back-end van Wordpress**
 
+## Dependencies
+1. php
+2. gulp
+3. jshint 
+4. modernizr
+5. autoprefixer
+6. rename
+7. yargs
+8. sass
+9. cleanCss 
+10. gulpif
+11. postcss
+12. sourcemaps
+13. imagemin
+14. webpack
+15. named 
+16. browserSync
+17. gulp-zip
+18. gulp-replace
+19. gulp-wp-pot
+20. minifyPipeline
+21. gzip 
+22. raster
+23. penthouse
+24. criticalCss
+25. fs 
+26. urlList 
+
 
 ## Mijn progressie
 
