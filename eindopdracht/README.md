@@ -99,6 +99,27 @@ De vanilla template houdt al rekening met de compressie van afbeeldingen, maar n
 
 Na wat testen en onderzoeken kwam ik er achter dat het webp formaat niet overal support wordt. Door deze reden heb ik dus ook besloten om de afbeeldingen maar niet in webp formaat om te zetten.
 
+```js
+export const images = () => {
+  return src('dev/images/**/*.{jpg,jpeg,png,svg,gif}')
+    .pipe(gulpif(PRODUCTION, imagemin([
+      imagemin.svgo({
+        plugins: [
+          { cleanupIDs: false }
+        ]
+      }),
+      imagemin.gifsicle({optimizationLevel: 3}),
+      imagemin.jpegtran(),
+      imagemin.optipng({optimizationLevel: 7})
+    ], {
+      verbose: true
+    })))
+    .pipe(dest('assets/images'));
+}
+```
+
+Om de afbeeldingen te optimaliseren, die ik er handmatig in heb gezet, hebben we de code hierboven. Hier worden alle afbeeldingen (inclusief gifs en svgs) gepakt en geminifyed kwa grootte. Het kwaliteit lijdt er niet onder en de afbeeldingen worden geplaatst in de asset folder.
+
 ### Fonts
 Fallback fonts zijn toegevoegd op de fonts die gebruikt worden samen met de font subsetting voor een snellere performance. Ook is `font-display: swap` toegevoegd, zodat eerst de fallback fonts er staan, voor de standaard font is ingeladen. Dit laat de content meteen aan de gebruiker zien zonder dat ze hoeven te wachten en alleen maar wit zien.
 
@@ -131,6 +152,9 @@ De hele JavaScript was opgebouwd uit JQuery, dit heb ik stuk voor stuk omgebouwd
 
 ### Animations
 RequestAnimationFrame is nu toegepast op de animaties voor een veel soepelere animatie.
+
+### Gzipping
+
 
 ### Service Worker
 Voor de website heb ik een service worker geïmplementeerd. Dit vond ik het meest interessante van de hele optimalisatie. Toen ik hier de vorige keer aan begon snapte ik er niks van en was er zelfs een beetje bang voor. Nu ik meer kennis heb kon ik het redelijk snel toevoegen. Een service worker is niks meer dan een webworker die netwerk requests onderschept. Wordt normaal gesproken gebruikt voor het cachen van bestanden of je website/applicatie online te laten werken.
