@@ -28,6 +28,8 @@ Het was tijdens het verbeteren van de website belangrijk om te onthouden dat al 
 
 **5. Vraag aan mij de inloggegevens voor de back-end van Wordpress**
 
+**6. Met de command "gulp dev" activeer je local server**
+
 ## Dependencies
 1. php
 2. gulp
@@ -104,7 +106,25 @@ Fallback fonts zijn toegevoegd op de fonts die gebruikt worden samen met de font
 Voor caching heb ik Redis gebruikt. Dit bewaard de cach op een apparte plek, waardoor de website sneller functioneerd. Dit kon ik installeren door een plugin te installeren op de website en in de wp-config aan te geven wat de salt en het wachtwoord is.
 
 ### CSS
-CSS wordt nu geminifyed en veel onnodige CSS is verwijderd. Niet alles kon verwijderd worden, aangezien veel plug ins geactiveerd zijn die CSS inladen die niet gebruikt worden, hier kan ik helaas niet veel aan doen.
+CSS wordt nu geminifyed en veel onnodige CSS is verwijderd. Niet alles kon verwijderd worden, aangezien veel plugins geactiveerd zijn die CSS inladen die niet gebruikt worden, hier kan ik helaas niet veel aan doen.
+
+```js
+export const styles = () => {
+  return src(['dev/styles/vendor.scss'])
+    .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulpif(PRODUCTION, cleanCss({compatibility:'ie8'})))
+    .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
+    .pipe(autoprefixer({
+        cascade: false
+    }))
+    .pipe(rename('main.css'))
+    .pipe(dest('assets/css'))
+    .pipe(server.stream());
+}
+```
+
+De functie hierboven zorgt ervoor dat de scss file wordt gepakt en deze kopieerd naar de assets map. Op het moment dat de website live gaat gooien we de commande "--prod" erop om te zorgen dat de css geminifyed wordt.
 
 ### JavaScript
 De hele JavaScript was opgebouwd uit JQuery, dit heb ik stuk voor stuk omgebouwd naar Vanilla JS. Dit duurde best lang, aangezien het veel code is. De JS wordt ook geminifyed en werd al ingeladen onderaan de body.
