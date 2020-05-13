@@ -134,4 +134,11 @@ self.addEventListener('install', function(event) {
 
 In mijn geval sla ik de hele wp-content map op. Deze map bevat alle bestanden die website gebruikt en hierdoor kan de website succesvol functioneren. Als de gebruiker op de website komt, dan zal de service worker te werk gaan. Als het internet zou uitvallen dan kan de gebruiker nog steeds op de website navigeren.
 
+### API Service side 
+Voor de website zelf heb ik niet echt iets spannends gedaan met de service side. Om te laten zien dat ik wel overweg kon met zowel service als client side heb ik dit wel verwerkt in mijn project voor Real Time Web. Het project zoals het nu opgebouwed is is een typing game. 
+
+De gebruikers komen in een lobby waar ze een gebruikersnaam kunnen opgeven en de game kunnen starten. Er wordt server side gekeken of de aantal gebruikers minimaal 2 zijn. Als dit het geval is dan wordt er via de server een Tweet ingeladen (hiervoor heb ik de Twit NPM gebruikt). De reden dat ik dit via de server doe is, zodat de Tweets hetzelfde zijn en op de zelfde snelheid inkomen. 
+
+Client side wordt er per gebruiker gekeken of de Tweet correct overtypen. Het moment dat een gebruiker de Tweet volledig heeft ingevuld, zal er via de server tegen iedereen die mee doet aan de game gezegd worden wie er een punt heeft gehaald. Dit gaat door tot iemand 3 punten heeft. De server verteld tegen iedereen wie er heeft gewonnen en de game kan opnieuw beginnen.
+
 [homebase]: homebase.png
