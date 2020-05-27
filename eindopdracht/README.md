@@ -203,7 +203,7 @@ const generateNewQuote = () => {
   }
 ```
 
-Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalderink/real-time-web-herkansing">hier</a>
+Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalderink/real-time-web-1920">hier</a>
 
 ## Bronnen
 - The Pack - Digital Agency => gevraagd voor de website die ik kon verbeteren
