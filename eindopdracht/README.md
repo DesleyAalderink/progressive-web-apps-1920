@@ -203,9 +203,7 @@ const generateNewQuote = () => {
   }
 ```
 
-## Conclusies
-
-### Critical rendering path
+## Conclusie
 
 Before: 
 ![Lighthouse before][lhb]
@@ -222,9 +220,11 @@ De performance valt hier heel erg laag. Onder de 10 zelfs. Om dit op te krikken 
 Door deze veranderingen door te voeren is de "Critical rendering path" sneller geworden.
 
 Before: 
+
 ![Critical rendering before][crb]
 
 After:
+
 ![Critical rendering after][cra]
 
 Een ware speedboost. Gebruikers krijgen nu sneller een beeld te zien als ze op de website komen.
@@ -232,11 +232,13 @@ Om hier dieper in te kijken kunnen we de request snelheid erbij pakken:
 
 
 Before: 
+
 ![Speedboost before][sbb]
 
 Hier is te zien dat voor de veranderingen gedaan waren, de snelheid rond de 2.5 seconden is. Ook worden bepaalde bestanden niet goed opgehaald vanuit de server.
 
 After:
+
 ![Speedboost after][sba]
 
 De tijd om de bestanden op te halen is flink verminderd. In ongeveer 1.5 seconden wordt alles nu opgehaald. Dat is us een seconde minder dan voorheen. Ook worden de bestanden die niet goed werden opgehaald door de server nu wel goed opgehaald.
