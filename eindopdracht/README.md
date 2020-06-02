@@ -231,3 +231,7 @@ Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalde
 
 
 [homebase]: homebase.png
+[crb]: crb.png
+[cra]: cra.png
+[lhb]: lhb.jpg
+[lha]: lha.jpg
