@@ -256,7 +256,8 @@ Bepaalde punten konden ook niet goed verwerkt worden, zoals onnodige CSS verwijd
 
 Deze opdracht is uiteindelijk rommelig in elkaar gezet. Het was eigenlijk niet de bedoeling dat de opdracht gemaakt werd in een Worpdress website. De API die ik laat zien is verwerkt in Real Time en eigenlijk hoort het allemaal bij elkaar als 1 opdracht. De grootste tijd heb ik gestopt in mijn buildtools om die zo optimaal mogelijk te maken en hier kreeg ik ook complimenten voor van Maikel. Ik had beter wat tijd daarvan kunnen stoppen in de performance van de website zelf. Ik hoop dat ik alsnog heb kunnen aantonen dat ik de stof begrijp en dit heb kunnen toepassen. 
 
-Ik heb veel geleerd van deze opdracht en zal de kennis zeker gebruiken in volgende projecten.
+MAAAAR ik heb veel geleerd van deze opdracht en zal de kennis zeker gebruiken in volgende projecten!
+Sterker nog we werken nu met deze nieuwe technieken op werk, omdat ik dit ook aan hen heb gepresenteerd. Woohoo!
 
 
 Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalderink/real-time-web-1920">hier</a>
