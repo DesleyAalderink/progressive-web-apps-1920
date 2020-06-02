@@ -235,7 +235,7 @@ Before:
 
 ![Speedboost before][sbb]
 
-Hier is te zien dat, voor de veranderingen gedaan waren, de snelheid rond de 2.5 seconden is. Ook worden bepaalde bestanden niet goed opgehaald vanuit de server.
+Hier is te zien dat, voor de veranderingen gedaan waren, de snelheid rond de 2.5 seconden is. Ik heb dit meerdere keren getest, omdat je internet snelheid altijd iets anders is. Het gemiddelde viel rond de 2.5 seconden. Ook worden bepaalde bestanden niet goed opgehaald vanuit de server.
 
 After:
 
