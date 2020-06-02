@@ -210,9 +210,15 @@ const generateNewQuote = () => {
 Before: 
 ![Lighthouse before][lhb]
 
-After:
-![Lighthouse after][lha]
+De performance valt hier heel erg laag. Onder de 10 zelfs. Om dit op te krikken heb ik de volgende punten verricht:
+- css/js minifyen voor een snellere server boost.
+- De bestanden worden geGzipped
+- JQuery is eruit gehaald en volledig omgebouwd naar vanilla JS
+- De images worden geoptimaliseerd 
+- Er is een service worker toegevoegd
+- Critical CSS is toegevoegd per pagina
 
+Door deze veranderingen door te voeren is de "Critical rendering path" sneller geworden.
 
 Before: 
 ![Critical rendering before][crb]
@@ -220,7 +226,9 @@ Before:
 After:
 ![Critical rendering after][cra]
 
-Dit zorgde voor een speedboost
+Een ware speedboost. Gebruikers krijgen nu sneller een beeld te zien als ze op de website komen.
+Om hier dieper in te kijken kunnen we de request snelheid erbij pakken:
+
 
 Before: 
 ![Speedboost before][sbb]
@@ -228,6 +236,13 @@ Before:
 After:
 ![Speedboost after][sba]
 
+De Tijd om de bestanden op te halen is flink verminderd. Ook waren er bepaalde bestanden niet goed opgehaald op de server. Dit is nu ook verbeterd.
+
+
+Uiteindelijk:
+![Lighthouse after][lha]
+
+Alles is omhoog gegaan. De performance is
 
 
 Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalderink/real-time-web-1920">hier</a>
