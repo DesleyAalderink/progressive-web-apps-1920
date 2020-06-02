@@ -217,6 +217,7 @@ De performance valt hier heel erg laag. Onder de 10 zelfs. Om dit op te krikken 
 - De images worden geoptimaliseerd 
 - Er is een service worker toegevoegd
 - Critical CSS is toegevoegd per pagina
+- Redis voor caching
 
 Door deze veranderingen door te voeren is de "Critical rendering path" sneller geworden.
 
@@ -233,16 +234,20 @@ Om hier dieper in te kijken kunnen we de request snelheid erbij pakken:
 Before: 
 ![Speedboost before][sbb]
 
+Hier is te zien dat voor de veranderingen gedaan waren, de snelheid rond de 2.5 seconden is. Ook worden bepaalde bestanden niet goed opgehaald vanuit de server.
+
 After:
 ![Speedboost after][sba]
 
-De Tijd om de bestanden op te halen is flink verminderd. Ook waren er bepaalde bestanden niet goed opgehaald op de server. Dit is nu ook verbeterd.
+De tijd om de bestanden op te halen is flink verminderd. In ongeveer 1.5 seconden wordt alles nu opgehaald. Dat is us een seconde minder dan voorheen. Ook worden de bestanden die niet goed werden opgehaald door de server nu wel goed opgehaald.
 
 
 Uiteindelijk:
 ![Lighthouse after][lha]
 
-Alles is omhoog gegaan. De performance is
+Alles is omhoog gegaan. De performance is nog steeds laag, maar wel een flinke verbeter slag dan wat het voorheen was. De reden waarom de website nog steeds laag uitkomt zal zijn, omdat de website een oude wordpress website is. Ik heb veel veranderingen doorgevoerd die kunnen, maar eigenlijk zou de hele website vanaf scratch opnieuw opgebouwd worden.
+
+Bepaalde punten konden ook niet goed verwerkt worden, zoals onnodige CSS verwijderen of dat de afbeeldingen WEBP moeten worden. Veel plugins bevatten onnodige CSS die niet verwijderd kunnen worden. WEBP formaten heb ik niet kunnen doorvoeren, omdat het niet overal support wordt. Hier zou dan weer een fallback voor geschreven moeten worden.
 
 
 Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalderink/real-time-web-1920">hier</a>
