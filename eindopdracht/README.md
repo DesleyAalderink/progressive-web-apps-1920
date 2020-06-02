@@ -229,8 +229,10 @@ After:
 ![Critical rendering after][cra]
 
 Een ware speedboost. Gebruikers krijgen nu sneller een beeld te zien als ze op de website komen.
-Om hier dieper in te kijken kunnen we de request snelheid erbij pakken:
+Ze hoeven niet meer te staren naar een wit scherm tot de content is ingeladen. De grootste redenen hiervoor zijn de font display en de critical css technieken. Door de font display kan er meteen een font laten zien worden tot de juiste font is ingeladen en de critical css zorgt ervoor dat alleen de nodige css aan de gebruiker getoont wordt. Hierdoor hoeft er minder CSS ingeladen te worden en daardoor een snellere laadtijd.
 
+
+De snelheid van de requests zijn ook omhoog gegaan.
 
 Before: 
 
