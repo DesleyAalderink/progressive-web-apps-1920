@@ -203,6 +203,25 @@ const generateNewQuote = () => {
   }
 ```
 
+## Conclusies
+
+### Critical rendering path
+Before: 
+![Critical rendering before][crb]
+
+After:
+![Critical rendering after][cra]
+
+Dit zorgde voor een speedboost
+
+Before: 
+![Speedboost before][spb]
+
+After:
+![Speedboost after][spa]
+
+
+
 Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalderink/real-time-web-1920">hier</a>
 
 ## Bronnen
