@@ -252,7 +252,9 @@ Alles is omhoog gegaan. De performance is nog steeds laag, maar wel een flinke v
 
 Bepaalde punten konden ook niet goed verwerkt worden, zoals onnodige CSS verwijderen of dat de afbeeldingen WEBP moeten worden. Veel plugins bevatten onnodige CSS die niet verwijderd kunnen worden. WEBP formaten heb ik niet kunnen doorvoeren, omdat het niet overal support wordt. Hier zou dan weer een fallback voor geschreven moeten worden.
 
-Deze opdracht is uiteindelijk rommelig in elkaar gezet. Het was eigenlijk niet de bedoeling dat de opdracht gemaakt werd in een Worpdress website. De API die ik laat zien is verwerkt in Real Time en eigenlijk hoort het allemaal bij elkaar. Ik heb wel veel geleerd van deze opdracht en zal de kennis zeker gebruiken in volgende projecten.
+Deze opdracht is uiteindelijk rommelig in elkaar gezet. Het was eigenlijk niet de bedoeling dat de opdracht gemaakt werd in een Worpdress website. De API die ik laat zien is verwerkt in Real Time en eigenlijk hoort het allemaal bij elkaar. Ik hoop dat ik alsnog heb kunnen aantonen dat ik de stof begrijp en dit heb kunnen toepassen. 
+
+Ik heb veel geleerd van deze opdracht en zal de kennis zeker gebruiken in volgende projecten.
 
 
 Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalderink/real-time-web-1920">hier</a>
