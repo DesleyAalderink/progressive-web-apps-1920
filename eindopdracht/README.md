@@ -208,7 +208,7 @@ const generateNewQuote = () => {
 Before: 
 ![Lighthouse before][lhb]
 
-De performance valt hier heel erg laag. Onder de 10 zelfs. Om dit op te krikken heb ik de volgende punten verricht:
+De performance valt hier heel erg laag. Onder de 10 zelfs. Om dit (en de accessibility/best practises) op te krikken heb ik de volgende punten verricht:
 - css/js minifyen voor een snellere server boost.
 - De bestanden worden geGzipped
 - JQuery is eruit gehaald en volledig omgebouwd naar vanilla JS
