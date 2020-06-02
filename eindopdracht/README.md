@@ -215,10 +215,10 @@ After:
 Dit zorgde voor een speedboost
 
 Before: 
-![Speedboost before][spb]
+![Speedboost before][sbb]
 
 After:
-![Speedboost after][spa]
+![Speedboost after][sba]
 
 
 
@@ -235,3 +235,5 @@ Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalde
 [cra]: cra.png
 [lhb]: lhb.jpg
 [lha]: lha.jpg
+[sbb]: sbb.png
+[sba]: sba.png
