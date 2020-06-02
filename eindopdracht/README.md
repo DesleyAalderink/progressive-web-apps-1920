@@ -250,9 +250,9 @@ De tijd om de bestanden op te halen is flink verminderd. In ongeveer 1.5 seconde
 Uiteindelijk:
 ![Lighthouse after][lha]
 
-Alles is omhoog gegaan. De performance is nog steeds laag, maar wel een flinke verbeter slag dan wat het voorheen was. De reden waarom de website nog steeds laag uitkomt zal zijn, omdat de website een oude wordpress website is. Ik heb veel veranderingen doorgevoerd die kunnen, maar eigenlijk zou de hele website vanaf scratch opnieuw opgebouwd worden.
+Alles is omhoog gegaan. De performance is nog steeds laag, maar wel een flinke verbeter slag dan wat het voorheen was. De reden waarom de website nog steeds laag uitkomt zal zijn, omdat de website een oude wordpress website is. Ik heb veel veranderingen doorgevoerd die kunnen, maar eigenlijk zou de hele website vanaf scratch opnieuw moeten worden opgebouwd.
 
-Bepaalde punten konden ook niet goed verwerkt worden, zoals onnodige CSS verwijderen of dat de afbeeldingen WEBP moeten worden. Veel plugins bevatten onnodige CSS die niet verwijderd kunnen worden. WEBP formaten heb ik niet kunnen doorvoeren, omdat het niet overal support wordt. Hier zou dan weer een fallback voor geschreven moeten worden.
+Bepaalde punten konden ook niet goed verwerkt worden, zoals onnodige CSS verwijderen of dat de afbeeldingen WEBP moeten worden. Veel plugins bevatten onnodige CSS die niet verwijderd kunnen worden. WEBP formaten heb ik niet kunnen doorvoeren, omdat het niet overal support wordt en ik vind dat belangrijker dan een paar audit puntjes.
 
 Deze opdracht is uiteindelijk rommelig in elkaar gezet. Het was eigenlijk niet de bedoeling dat de opdracht gemaakt werd in een Worpdress website. De API die ik laat zien is verwerkt in Real Time en eigenlijk hoort het allemaal bij elkaar als 1 opdracht. De grootste tijd heb ik gestopt in mijn buildtools om die zo optimaal mogelijk te maken en hier kreeg ik ook complimenten voor van Maikel. Ik had beter wat tijd daarvan kunnen stoppen in de performance van de website zelf. Ik hoop dat ik alsnog heb kunnen aantonen dat ik de stof begrijp en dit heb kunnen toepassen. 
 
