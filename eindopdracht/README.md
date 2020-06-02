@@ -216,6 +216,7 @@ De performance valt hier heel erg laag. Onder de 10 zelfs. Om dit op te krikken 
 - Er is een service worker toegevoegd
 - Critical CSS is toegevoegd per pagina
 - Redis voor caching
+- Font display swap
 
 Door deze veranderingen door te voeren is de "Critical rendering path" sneller geworden.
 
