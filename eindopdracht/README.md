@@ -244,7 +244,7 @@ After:
 
 ![Speedboost after][sba]
 
-De tijd om de bestanden op te halen is flink verminderd. In ongeveer 1.5 seconden wordt alles nu opgehaald. Dat is us een seconde minder dan voorheen. Ook worden de bestanden die niet goed werden opgehaald door de server nu wel goed opgehaald.
+De tijd om de bestanden op te halen is flink verminderd. In ongeveer 1.5 seconden wordt alles nu opgehaald. Dat is us een seconde minder dan voorheen. Ook worden de bestanden die niet goed werden opgehaald door de server nu wel goed opgehaald (font awesome). Images worden gecompressed en de geGzippede bestanden zorgen ervoor dat er minder hoeft worden ingeladen.
 
 
 Uiteindelijk:
