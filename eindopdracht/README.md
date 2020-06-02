@@ -206,6 +206,14 @@ const generateNewQuote = () => {
 ## Conclusies
 
 ### Critical rendering path
+
+Before: 
+![Lighthouse before][lhb]
+
+After:
+![Lighthouse after][lha]
+
+
 Before: 
 ![Critical rendering before][crb]
 
@@ -237,3 +245,5 @@ Link naar de realtime web met code? klik <a href="https://github.com/DesleyAalde
 [lha]: lha.jpg
 [sbb]: sbb.png
 [sba]: sba.png
+[lhb]: lhb.jpg
+[lha]: lha.jpg
